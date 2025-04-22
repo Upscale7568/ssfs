@@ -52,6 +52,7 @@ jobs:
     # https://github.com/trufflesecurity/trufflehog#octocat-trufflehog-github-action
     steps:
       - name: Checkout code
+      - uses: actions/checkout@v4
       - name: Secret Scanning
       - uses: trufflesecurity/trufflehog@main
         with:
